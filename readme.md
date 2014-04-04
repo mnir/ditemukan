@@ -1,5 +1,5 @@
-Proyek Sosial:
-# ditemukan.org
+## ditemukan.org
+Proyek sosial: untuk membantu memberikan informasi tentang yang hilang.
 
 #### Framework:
 ### Laravel
