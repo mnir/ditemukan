@@ -11,3 +11,7 @@ Laravel
 - Input post barang ditemukan
 
 #### Fungsi yang Sudah Selesai:
+
+
+#### Total Fungsi:
+- tambah disini jika ada saran
