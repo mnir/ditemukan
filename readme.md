@@ -9,6 +9,7 @@
 - Login via Twitter
 - Input post barang hilang
 - Input post barang ditemukan
+- Moderasi postingan (?)
 
 #### Fungsi yang Sudah Selesai:
 
