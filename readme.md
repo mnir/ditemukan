@@ -1,7 +1,7 @@
-#### Proyek Sosial:
+Proyek Sosial:
 # ditemukan.org
 
-##### Framework:
+#### Framework:
 ### Laravel
 
 ##### Fungsi Dasar:
