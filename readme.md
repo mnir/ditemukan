@@ -1,9 +1,9 @@
-## Master file ditemukan.org
+# Proyek Sosial: ditemukan.org
 
-### Framework:
-##### Laravel
+## Framework:
+### Laravel
 
-#### Fungsi Dasar:
+## Fungsi Dasar:
 - Login via Facebook
 - Login via Google+
 - Login via Twitter
@@ -12,8 +12,8 @@
 - Moderasi postingan (?)
 - Fungsi Admin (halaman admin)
 
-#### Fungsi yang Sudah Selesai:
+## Fungsi yang Sudah Selesai:
 
 
-#### Total Fungsi:
+## Total Fungsi:
 - tambah disini jika ada saran
