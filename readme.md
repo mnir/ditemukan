@@ -1,6 +1,13 @@
 ## Master file ditemukan.org
-### Framework: Laravel
 
-#Fungsi Dasar:
-- Login
+### Framework:
+Laravel
+
+#### Fungsi Dasar:
+- Login via Facebook
+- Login via Google+
+- Login via Twitter
 - Input post barang hilang
+- Input post barang ditemukan
+
+#### Fungsi yang Sudah Selesai:
