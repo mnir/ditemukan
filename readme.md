@@ -10,6 +10,7 @@
 - Input post barang hilang
 - Input post barang ditemukan
 - Moderasi postingan (?)
+- Fungsi Admin (halaman admin)
 
 #### Fungsi yang Sudah Selesai:
 
