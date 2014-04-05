@@ -8,7 +8,7 @@ Untuk proyek ini kita sepakat untuk menggunakan **Laravel 4** sebagai PHP framew
 Kalau agan berminat untuk ngebantu proyek ini biar rampung, bisa gabung diskusinya dimari gan [thread kaskus](http://www.kaskus.co.id/thread/531b38f841cb17e66e8b45cb/non-profit-mencari-developer-untuk-ditemukanorg/) atau [Google+](https://plus.google.com/u/0/109324412661501708233/posts). Apapun bentuk **kontribusi** agan akan sangat berharga.
 
 ### Fungsi
-Berikut adalah beberapa fungsi sementara dari hasil diskusi dengan kawan-kawan yang sudah mau ikut membantu agar terlaksananya proyek ini. Jika agan punya saran atau ide, bisa di share di mari [thread kaskus](http://www.kaskus.co.id/thread/531b38f841cb17e66e8b45cb/non-profit-mencari-developer-untuk-ditemukanorg/) atau dimari juga bisa gan [Google+](https://plus.google.com/u/0/109324412661501708233/posts), terserah agan aja enaknya dimana.
+Berikut adalah beberapa fungsi sementara dari hasil diskusi dengan kawan-kawan yang sudah mau ikut membantu agar terlaksananya proyek ini. Jika agan punya **saran** atau **ide**, bisa di share di [kaskus](http://www.kaskus.co.id/thread/531b38f841cb17e66e8b45cb/non-profit-mencari-developer-untuk-ditemukanorg/) atau dimari juga bisa gan di mbah [Google+](https://plus.google.com/u/0/109324412661501708233/posts) pokoknya terserah agan aja enaknya dimana.
 
 ###### Fungsi dasar
 - Login via Facebook
