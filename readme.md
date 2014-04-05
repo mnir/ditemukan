@@ -24,3 +24,31 @@ Berikut adalah beberapa fungsi sementara dari hasil diskusi dengan kawan-kawan y
 - Login via Google+
 - Login via Twitter
 - Tambah disini jika ada saran
+
+***
+###### Strategy
+**Maksud** dan **tujuan**.
+
+###### Scope
+```
+Login
+|- Facebook
+|- Google+
+|- Twitter
+
+Post hilang
+
+Post ditemukan
+
+Cari barang hilang
+|- berdasarkan kota
+|- berdasarkan jenis
+
+Cari barang ditemukan
+|- berdasarkan kota
+|- berdasarkan jenis
+```
+###### Structure (Wireframe)
+
+###### Skeleton
+###### Surface (Design & User Interface)
