@@ -37,21 +37,21 @@ Sites flow
 Admin
 
 Login
-|- Facebook
-|- Google+
-|- Twitter
+  |- Facebook
+  |- Google+
+  |- Twitter
 
 Post kehilangan(?)
 
 Post ditemukan
 
 Cari barang hilang
-|- berdasarkan kota
-|- berdasarkan jenis
+  |- berdasarkan kota
+  |- berdasarkan jenis
 
 Cari barang ditemukan
-|- berdasarkan kota
-|- berdasarkan jenis
+  |- berdasarkan kota
+  |- berdasarkan jenis
 ```
 
 ###### Skeleton (Wireframe)
