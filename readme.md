@@ -1,10 +1,10 @@
-## ditemukan.org
-Proyek sosial: untuk membantu memberikan informasi tentang yang hilang.
+# ditemukan.org
+> Proyek sosial berbasis aplikasi web untuk membantu memberikan informasi tentang kehilangan dan ditemukan.
 
-#### Framework:
-### Laravel
+###### Framework:
+### Laravel 4
 
-##### Fungsi Dasar:
+##### Fungsi Dasar
 - Login via Facebook
 - Login via Google+
 - Login via Twitter
@@ -13,8 +13,11 @@ Proyek sosial: untuk membantu memberikan informasi tentang yang hilang.
 - Moderasi postingan (?)
 - Fungsi Admin (halaman admin)
 
-##### Fungsi yang Sudah Selesai:
+##### Fungsi yang Sudah Selesai
+- Belum ada
 
+##### Total Fungsi
+- Tambah disini jika ada saran
 
-##### Total Fungsi:
-- tambah disini jika ada saran
+###### Kontribusi anda begitu berharga
+[Open Thread di kaskus](http://www.kaskus.co.id/thread/531b38f841cb17e66e8b45cb/non-profit-mencari-developer-untuk-ditemukanorg/)
