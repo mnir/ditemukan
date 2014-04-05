@@ -30,13 +30,18 @@ Berikut adalah beberapa fungsi sementara dari hasil diskusi dengan kawan-kawan y
 **Maksud** dan **tujuan**.
 
 ###### Scope
+
+###### Structure
+Sites flow
 ```
+Admin
+
 Login
 |- Facebook
 |- Google+
 |- Twitter
 
-Post hilang
+Post kehilangan***(?)***
 
 Post ditemukan
 
@@ -48,7 +53,6 @@ Cari barang ditemukan
 |- berdasarkan kota
 |- berdasarkan jenis
 ```
-###### Structure (Wireframe)
 
-###### Skeleton
+###### Skeleton (Wireframe)
 ###### Surface (Design & User Interface)
