@@ -1,23 +1,24 @@
 # ditemukan.org
-> Proyek sosial berbasis aplikasi web untuk membantu memberikan informasi tentang kehilangan dan ditemukan.
+> Proyek sosial berbasis aplikasi web untuk membantu mengelola informasi tentang kehilangan dan ditemukan.
 
 ###### Framework:
 ### Laravel 4
+[tentang Laravel 4](http://laravel.com/)
 
-##### Fungsi Dasar
+##### Kontribusi anda begitu berharga
+[Thread di kaskus](http://www.kaskus.co.id/thread/531b38f841cb17e66e8b45cb/non-profit-mencari-developer-untuk-ditemukanorg/)
+
+###### Fungsi dasar
 - Login via Facebook
-- Login via Google+
-- Login via Twitter
 - Input post barang hilang
 - Input post barang ditemukan
 - Moderasi postingan (?)
 - Fungsi Admin (halaman admin)
 
-##### Fungsi yang Sudah Selesai
+###### Fungsi yang sudah selesai
 - Belum ada
 
-##### Total Fungsi
+###### Total fungsi
+- Login via Google+
+- Login via Twitter
 - Tambah disini jika ada saran
-
-###### Kontribusi anda begitu berharga
-[Open Thread di kaskus](http://www.kaskus.co.id/thread/531b38f841cb17e66e8b45cb/non-profit-mencari-developer-untuk-ditemukanorg/)
