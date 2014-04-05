@@ -41,7 +41,7 @@ Login
 |- Google+
 |- Twitter
 
-Post kehilangan***(?)***
+Post kehilangan(?)
 
 Post ditemukan
 
