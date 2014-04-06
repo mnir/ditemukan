@@ -44,14 +44,19 @@ Sites flow
 ```
 Admin
 
+Daftar baru
+  |- daftar akun
+
 Login
   |- Facebook
   |- Google+
   |- Twitter
 
 Post kehilangan(?)
+  |- Form untuk input post
 
 Post ditemukan
+  |- Form untuk input post
 
 Cari barang hilang
   |- berdasarkan kota
