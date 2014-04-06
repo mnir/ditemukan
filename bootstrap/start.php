@@ -30,7 +30,6 @@ $env = $app->detectEnvironment(array(
 
 ));
 
-//$environment = App::environment('local');
 /*
 |--------------------------------------------------------------------------
 | Bind Paths
