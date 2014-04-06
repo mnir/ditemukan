@@ -5,7 +5,7 @@
 ###### PHP
 Untuk proyek ini kita sepakat untuk menggunakan **Laravel 4** sebagai PHP framework-nya. Klik dimari kalau agan pengen tau lebih tentang [Laravel 4](http://laravel.com/).
 
-###### CSS Framework
+###### CSS
 Untuk CSS framework yang digunakan adalah Twitter Bootstrap.
 
 ###### CSS Preprocessor
