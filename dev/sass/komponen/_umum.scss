@@ -1,15 +1,15 @@
 /* ==================================================================================== *\
-	Digunakan untuk mendeklarasikan class dan fungsi umum
+	Digunakan untuk mendeklarasikan helper class dan fungsi umum
 \* ==================================================================================== */
 
 // Desain sementara untuk posisi logo
 #logo {
-	width: 249px;
+	width: 500px;
 	height: 249px;
 	position:absolute;
-	top: 50%;
+	top: 30%;
 	left: 50%;
-	margin-left: -125px;
+	margin-left: -250px;
 	margin-top: -145px;
 	text-align: center;
 }
@@ -17,8 +17,17 @@
 body {
 	background-color: #f7f8f9;
 	background: url('../img/layout/bg-temp.png');
+	color: $baseColor;
+	line-height: 1.8;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
 	font-family: $baseFont;
+}
+
+a {
+
+	&:hover {
+		text-decoration: none;
+	}
 }

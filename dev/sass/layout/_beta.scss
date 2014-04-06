@@ -1,0 +1,14 @@
+/* ==================================================================================== *\
+	Digunakan untuk halaman utama sementara
+\* ==================================================================================== */
+.btn-info {
+	background-color: #444;
+	border-color: #222;
+	color: #efefef;
+
+	&:hover {
+		color: #fff;
+		background-color: #333;
+		border-color: #111;
+	}
+}

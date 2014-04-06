@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Stylesheet -->
-        <link rel="stylesheet" href="{{ URL::to('/') }}/assets/css/screen.css">
+        {{ HTML::style('assets/css/screen.css') }}
 		<link href='http://fonts.googleapis.com/css?family=Oxygen:300,400,700|Kreon:300,400' rel='stylesheet' type='text/css' /></head>
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
