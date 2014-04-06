@@ -13,3 +13,4 @@ Thumbs.db
 .sass-cache/**/*.scssc
 app/config/local
 app/config/database.php
+.idea/

@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * template file for database config
+ * Rename this file into database.php and then set your database config
+ */
+
 return array(
 
 	/*
