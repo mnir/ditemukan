@@ -1,8 +1,15 @@
 # ditemukan.org
 > Proyek sosial berbasis aplikasi web untuk membantu mengelola informasi tentang kehilangan dan ditemukan. Proyek ini bersifat terbuka dan mengharapkan kontribusi agan dalam pembangunan aplikasi web ini.
 
-### PHP Framework:
+### Framework:
+###### PHP
 Untuk proyek ini kita sepakat untuk menggunakan **Laravel 4** sebagai PHP framework-nya. Klik dimari kalau agan pengen tau lebih tentang [Laravel 4](http://laravel.com/).
+
+###### CSS Framework
+Untuk CSS framework yang digunakan adalah Twitter Bootstrap.
+
+###### CSS Preprocessor
+Untuk CSS Preprocessor menggunakan SASS.
 
 ### Kontribusi
 Kalau agan berminat untuk ngebantu proyek ini biar rampung, bisa gabung diskusinya dimari gan [thread kaskus](http://www.kaskus.co.id/thread/531b38f841cb17e66e8b45cb/non-profit-mencari-developer-untuk-ditemukanorg/) atau [Google+](https://plus.google.com/u/0/109324412661501708233/posts). Apapun bentuk **kontribusi** agan akan sangat berharga.

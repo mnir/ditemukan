@@ -1,0 +1,24 @@
+/* ==================================================================================== *\
+	Digunakan untuk mendeklarasikan class dan fungsi umum
+\* ==================================================================================== */
+
+// Desain sementara untuk posisi logo
+#logo {
+	width: 249px;
+	height: 249px;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -125px;
+	margin-top: -145px;
+	text-align: center;
+}
+
+body {
+	background-color: #f7f8f9;
+	background: url('../img/layout/bg-temp.png');
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: $baseFont;
+}
