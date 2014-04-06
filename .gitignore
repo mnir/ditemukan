@@ -9,3 +9,4 @@ Thumbs.db
 app/config/database.php
 /app/config/database.*
 /.sass-cache
+/.sass-cache/**/*.*
