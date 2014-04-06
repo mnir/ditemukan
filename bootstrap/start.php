@@ -26,8 +26,8 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('local'),
-
+	'local' => array('RMCodes-MacBook-Pro.local'),
+	//return require __DIR__.'/environment.php';
 ));
 
 /*
