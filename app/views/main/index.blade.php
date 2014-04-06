@@ -5,7 +5,7 @@
 	<img src="{{ URL::to('/') }}/assets/img/layout/logo.png" alt="ditemukan.org logo">
 	<h2>ditemukan.org</h2>
 	<p>
-		ditemukan.org adalah aplikasi web dengan tujuan sosial.<br>
+		ditemukan.org adalah aplikasi web dengan tujuan sosial, dimana memberikan fasilitas untuk mengumpulkan dan menyebarluaskan informasi seputar kehilangan dan ditemukan.<br>
 		Proyek ini bersifat terbuka dan dikerjakan secara sukarela oleh para kontributor.
 		Jika berminat untuk membantu mengembangkan proyek ini, silahkan kunjungi:
 	</p>

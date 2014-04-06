@@ -1,4 +1,6 @@
 /bootstrap/compiled.php
+/bootstrap/start.php
+bootstrap/start.php
 /vendor
 composer.phar
 composer.lock
@@ -6,8 +8,7 @@ composer.lock
 .env.php
 .DS_Store
 Thumbs.db
-app/config/database.php
-/app/config/database.*
 .sass-cache/*
 .sass-cache/**/*.*
 .sass-cache/**/*.scssc
+app/config/local
