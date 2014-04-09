@@ -7,9 +7,5 @@ class City extends Eloquent {
 	/**
 	 * Models relationship
 	 */
-	public function user()
-	{
-		return $this->hasMany('User');
-	}
 
 }

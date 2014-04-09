@@ -1,5 +1,4 @@
 <?php
 
 Route::get('/', array('uses' => 'HomeController@index'));
-
-Route::controller('cities', 'CitiesController');
+Route::controller('users', 'UsersController');

@@ -19,8 +19,6 @@ class CreateUsersTable extends Migration {
 			$table->string('firstname');
 			$table->string('lastname');
 			$table->string('password');
-			$table->integer('city_id')->unsigned();
-			$table->foreign('city_id')->references('id')->on('cities');
 			$table->timestamps();
 		});
 	}
