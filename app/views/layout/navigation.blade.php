@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -36,17 +36,12 @@
                 <button type="submit" class="btn btn-default">Cari</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
+                @if(Auth::check())
+                <li><a href="{{ URL::to('users/logout') }}">Logout</a></li>
+                @else
+                <li><a href="{{ URL::to('users/login') }}">Login</a></li>
+                <li><a href="{{ URL::to('users/create') }}">Daftar</a></li>
+                @endif
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

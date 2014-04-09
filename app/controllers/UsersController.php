@@ -64,4 +64,10 @@ class UsersController extends BaseController {
 		if($auth) { return Redirect::to('/'); }
 	}
 
+	public function getLogout()
+	{
+		Auth::logout();
+		return Redirect::to('/');
+	}
+
 }

@@ -5,7 +5,7 @@
 	<div class="col-md-6 col-md-offset-3">
 		<div id="login-form">
 			<div class="login-form-header">
-				<h2>Login</h2>
+				<h2>Buat akun</h2>
 			</div>
 			<div class="login-form-body">
 				{{ Form::open(array('url'=>'users/create', 'class'=>'form-horizontal')) }}
