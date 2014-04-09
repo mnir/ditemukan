@@ -1,6 +1,6 @@
 /bootstrap/compiled.php
-/bootstrap/start.php
-bootstrap/start.php
+/bootstrap
+/bootstrap
 /vendor
 composer.phar
 composer.lock
@@ -12,5 +12,4 @@ Thumbs.db
 .sass-cache/**/*.*
 .sass-cache/**/*.scssc
 app/config/local
-app/config/database.php
 .idea/

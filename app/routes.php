@@ -1,6 +1,3 @@
 <?php
 
-Route::get('/', array(
-	'as' =>	'HomeController',
-	'uses' => 'HomeController@index'
-));
+Route::get('/', array('uses' => 'HomeController@index'));
