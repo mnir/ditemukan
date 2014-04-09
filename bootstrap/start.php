@@ -24,11 +24,10 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
-
-	'local' => array('RMCodes-MacBook-Pro.local'),
-	//return require __DIR__.'/environment.php';
-));
+$env = $app->detectEnvironment(function()
+{
+	return require __DIR__.'/enviroment.php';
+});
 
 /*
 |--------------------------------------------------------------------------
