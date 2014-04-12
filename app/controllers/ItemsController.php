@@ -2,9 +2,9 @@
 
 class ItemsController extends BaseController {
 
-	public function getIndex()
+	public function __construct()
 	{
-		//
+		$this->beforeFilter('csrf', ['on'=>'post']);
 	}
 
 	public function getCreate()
@@ -27,6 +27,7 @@ class ItemsController extends BaseController {
 			'title'  => 'required|min:5',
 			'desc'   => 'required|min:5'
 		);
+
 		$validator = Validator::make(Input::all(), $rules);
 
 		if ($validator->fails())

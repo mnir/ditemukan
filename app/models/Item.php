@@ -3,6 +3,6 @@
 class Item extends Eloquent {
 
 	public function user() { return $this->belongsTo('User'); }
-	public function city() { return $this->hasOne('City'); }
+	public function city() { return $this->belongsTo('City'); }
 
 }

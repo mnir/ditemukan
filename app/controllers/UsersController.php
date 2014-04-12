@@ -24,7 +24,9 @@ class UsersController extends BaseController {
 		if($validator->fails())
 		{
 			return Redirect::to('users/create')->withErrors($validator)->withInput();
-		} else {
+		}
+		else
+		{
 			$user = new User;
 			$user->firstname = Input::get('firstname');
 			$user->lastname = Input::get('lastname');
@@ -58,9 +60,10 @@ class UsersController extends BaseController {
 		}
 
 		$auth = Auth::attempt(array(
-				'email' => Input::get('email'),
-				'password' => Input::get('password')
-			));
+			'email' => Input::get('email'),
+			'password' => Input::get('password')
+		));
+
 		if($auth)
 		{
 			return Redirect::to('/');

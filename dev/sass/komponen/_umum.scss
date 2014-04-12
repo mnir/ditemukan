@@ -3,14 +3,9 @@
 \* ==================================================================================== */
 
 // Desain sementara untuk posisi logo
-#logo {
+#bumper {
 	width: 500px;
-	height: 249px;
-	position:absolute;
-	top: 30%;
-	left: 50%;
-	margin-left: -250px;
-	margin-top: -145px;
+	margin: auto;
 	text-align: center;
 }
 
@@ -30,4 +25,8 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
+}
+
+footer {
+	text-align: center;
 }

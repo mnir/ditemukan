@@ -8,8 +8,9 @@ composer.lock
 .env.php
 .DS_Store
 Thumbs.db
-.sass-cache/*
-.sass-cache/**/*.*
-.sass-cache/**/*.scssc
+.sass-cache/
+.sass-cache/**
+/.sass-cache/**/*.*
+/.sass-cache/**/*.scssc
 app/config/local
 .idea/
