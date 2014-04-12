@@ -9,6 +9,20 @@ class DatabaseSeeder extends Seeder {
 		// $this->call('UserTableSeeder');
 		$this->call('CityTableSeeder');
 		$this->call('EventTableSeeder');
+		$this->call('RoleTableSeeder');
+	}
+}
+
+class RoleTableSeeder extends DatabaseSeeder {
+
+	public function run()
+	{
+		DB::table('roles')->insert(
+			array(
+				array('name' => 'user'),
+				array('name' => 'admin')
+			)
+		);
 	}
 }
 
@@ -40,3 +54,4 @@ class EventTableSeeder extends DatabaseSeeder {
 		);
 	}
 }
+
