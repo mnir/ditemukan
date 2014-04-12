@@ -8,6 +8,7 @@ class DatabaseSeeder extends Seeder {
 
 		// $this->call('UserTableSeeder');
 		$this->call('CityTableSeeder');
+		$this->call('EventTableSeeder');
 	}
 }
 
@@ -22,6 +23,19 @@ class CityTableSeeder extends DatabaseSeeder {
 				array('name' => 'Semarang'),
 				array('name' => 'Surabaya'),
 				array('name' => 'Medan'),
+			)
+		);
+	}
+}
+
+class EventTableSeeder extends DatabaseSeeder {
+
+	public function run()
+	{
+		DB::table('events')->insert(
+			array(
+				array('name' => 'Hilang'),
+				array('name' => 'Ditemukan')
 			)
 		);
 	}
