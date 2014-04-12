@@ -61,7 +61,10 @@ class UsersController extends BaseController {
 				'email' => Input::get('email'),
 				'password' => Input::get('password')
 			));
-		if($auth) { return Redirect::to('/'); }
+		if($auth)
+		{
+			return Redirect::to('/');
+		}
 	}
 
 	public function getLogout()
