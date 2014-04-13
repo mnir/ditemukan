@@ -15,7 +15,8 @@ class ItemsController extends BaseController {
 		}
 		else
 		{
-			return Redirect::to('/');
+			return Redirect::to('users/login')
+			->with('message', 'Silahkan lakukan login/daftar terlebih dahulu.');
 		}
 	}
 

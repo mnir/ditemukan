@@ -1,5 +1,5 @@
 <footer>
 	<div class="container">
-		©2014 ditemukan.org
+		<p><small>©2014 ditemukan.org</small></p>
 	</div>
 </footer>

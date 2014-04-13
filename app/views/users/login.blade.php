@@ -34,6 +34,7 @@
 					</div>
 				</div>
 
+				{{ HTML::link('users/create', 'Buat akun') }}
 				{{ Form::close() }}
 			</div>
 		</div>
