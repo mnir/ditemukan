@@ -1,5 +1,6 @@
 # ditemukan.org
 > Proyek sosial berbasis aplikasi web untuk membantu mengelola informasi tentang kehilangan dan ditemukan. Proyek ini bersifat terbuka dan mengharapkan kontribusi agan dalam pembangunan aplikasi web ini.
+[Google+ Community](https://plus.google.com/communities/115849858552849254841)
 
 ### Framework:
 ###### PHP
@@ -13,10 +14,10 @@ Untuk CSS framework yang digunakan adalah Twitter Bootstrap.
 Untuk CSS Preprocessor menggunakan SASS.
 
 ### Kontribusi
-Kalau agan berminat untuk ngebantu proyek ini biar rampung, bisa gabung diskusinya dimari gan [thread kaskus](http://www.kaskus.co.id/thread/531b38f841cb17e66e8b45cb/non-profit-mencari-developer-untuk-ditemukanorg/) atau [Google+](https://plus.google.com/u/0/109324412661501708233/posts). Apapun bentuk **kontribusi** agan akan sangat berharga.
+Kalau agan berminat untuk ngebantu proyek ini biar rampung, bisa gabung diskusinya dimari gan [Google+ Community](https://plus.google.com/communities/115849858552849254841). Apapun bentuk **kontribusi** agan akan sangat berharga.
 
 ### Fungsi
-Berikut adalah beberapa fungsi sementara dari hasil diskusi dengan kawan-kawan yang sudah mau ikut membantu agar terlaksananya proyek ini. Jika agan punya **saran** atau **ide**, bisa di share di [kaskus](http://www.kaskus.co.id/thread/531b38f841cb17e66e8b45cb/non-profit-mencari-developer-untuk-ditemukanorg/) atau dimari juga bisa gan di mbah [Google+](https://plus.google.com/u/0/109324412661501708233/posts) pokoknya terserah agan aja enaknya dimana.
+Berikut adalah beberapa fungsi sementara dari hasil diskusi dengan kawan-kawan yang sudah mau ikut membantu agar terlaksananya proyek ini. Jika agan punya **saran** atau **ide**, bisa di share di[Google+ Community](https://plus.google.com/communities/115849858552849254841) pokoknya terserah agan aja enaknya dimana.
 
 ###### Fungsi dasar
 - Input post barang hilang
