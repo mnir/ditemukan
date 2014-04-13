@@ -1,6 +1,7 @@
 # ditemukan.org
 > Proyek sosial berbasis aplikasi web untuk membantu mengelola informasi tentang kehilangan dan ditemukan. Proyek ini bersifat terbuka dan mengharapkan kontribusi agan dalam pembangunan aplikasi web ini.
-[Google+ Community](https://plus.google.com/communities/115849858552849254841)
+
+Buat agan-agan yang sudah atau mau membantu project ini bisa bergabung di [Google+ Community](https://plus.google.com/communities/115849858552849254841)
 
 ### Framework:
 ###### PHP
