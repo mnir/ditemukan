@@ -19,7 +19,6 @@ Kalau agan berminat untuk ngebantu proyek ini biar rampung, bisa gabung diskusin
 Berikut adalah beberapa fungsi sementara dari hasil diskusi dengan kawan-kawan yang sudah mau ikut membantu agar terlaksananya proyek ini. Jika agan punya **saran** atau **ide**, bisa di share di [kaskus](http://www.kaskus.co.id/thread/531b38f841cb17e66e8b45cb/non-profit-mencari-developer-untuk-ditemukanorg/) atau dimari juga bisa gan di mbah [Google+](https://plus.google.com/u/0/109324412661501708233/posts) pokoknya terserah agan aja enaknya dimana.
 
 ###### Fungsi dasar
-- Login via Facebook
 - Input post barang hilang
 - Input post barang ditemukan
 - Moderasi postingan (?)
@@ -29,8 +28,6 @@ Berikut adalah beberapa fungsi sementara dari hasil diskusi dengan kawan-kawan y
 - Belum ada
 
 ###### Fungsi tambahan
-- Login via Google+
-- Login via Twitter
 - Tambah disini jika ada saran
 
 ***
@@ -48,11 +45,9 @@ Daftar baru
   |- daftar akun
 
 Login
-  |- Facebook
-  |- Google+
-  |- Twitter
+  |- Login
 
-Post kehilangan(?)
+Post kehilangan
   |- Form untuk input post
 
 Post ditemukan
