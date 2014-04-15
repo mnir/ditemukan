@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-6">
 			<h1>Input Data Barang Hilang</h1>
-			{{ Form::open(['url'=>'item/create' , 'class'=>'form-horizontal']) }}
+			{{ Form::open(['url'=>'items/create', 'files'=>'true', 'class'=>'form-horizontal']) }}
 
 			<div class="form-group">
 				<label for="events" class="control-label col-md-4">Status barang</label>
@@ -39,6 +39,13 @@
 				<label for="desc" class="control-label col-md-4">Informasi</label>
 				<div class="col-md-8">
 					{{ Form::textarea('desc', null, ['class'=>'form-control']) }}
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="desc" class="control-label col-md-4">Gambar</label>
+				<div class="col-md-8">
+					{{ Form::file('image', ['class'=>'form-control']) }}
 				</div>
 			</div>
 

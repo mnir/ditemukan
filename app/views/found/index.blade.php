@@ -8,10 +8,10 @@
 			<ul>
 				@foreach ($items as $item)
 					<li>
-						{{{ $item->title }}}<br>
+						{{ HTML::link('items/show/'.$item->id, $item->title) }}<br>
 						{{{ $item->user->firstname.' '.$item->user->lastname }}}<br>
 						{{ $item->city->name }}<br>
-						{{ $item->description }}
+						{{{ $item->description }}}
 					</li>
 				@endforeach
 			</ul>

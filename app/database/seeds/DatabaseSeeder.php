@@ -54,4 +54,3 @@ class EventTableSeeder extends DatabaseSeeder {
 		);
 	}
 }
-
