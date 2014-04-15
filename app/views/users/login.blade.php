@@ -31,6 +31,11 @@
 				<div class="form-group">
 					<div class="col-md-8 col-md-offset-4">
 						{{ Form::submit('Login', array('class'=>'btn btn-primary')) }}
+						{{ Form::button('Facebook', array(
+							'class'=>'btn btn-primary',
+							'onclick' => 'window.location.href=\'facebook\''
+						)) }}
+						{{ Form::button('Twitter', array('class'=>'btn btn-primary')) }}
 					</div>
 				</div>
 

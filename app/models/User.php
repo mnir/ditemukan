@@ -8,7 +8,15 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	/**
 	 * Setting Model Relationship
 	 */
-	public function item() { return $this->hasMany('Item'); }
+	public function item() 
+	{ 
+		return $this->hasMany('Item'); 
+	}
+	
+	public function profiles()
+	{
+		return $this->hasMany('Profile');
+	}
 
 	/**
 	 * The attributes excluded from the model's JSON form.
