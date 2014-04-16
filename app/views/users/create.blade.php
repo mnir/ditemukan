@@ -11,6 +11,14 @@
 				{{ Form::open(array('url'=>'users/create', 'class'=>'form-horizontal')) }}
 
 				<div class="form-group">
+					<label for="firstname" class="control-label col-md-4">Username</label>
+					<div class="col-md-8">
+						{{ Form::text('username', null, array('class'=>'form-control', 'id'=>'username')) }}
+						{{ $errors->first('username') }}
+					</div>
+				</div>
+				
+				<div class="form-group">
 					<label for="firstname" class="control-label col-md-4">Nama depan</label>
 					<div class="col-md-8">
 						{{ Form::text('firstname', null, array('class'=>'form-control', 'id'=>'firstname')) }}
@@ -43,7 +51,7 @@
 
 				<div class="form-group">
 					<div class="col-md-8 col-md-offset-4">
-						{{ Form::submit('Login', array('class'=>'btn btn-primary')) }}
+						{{ Form::submit('Register', array('class'=>'btn btn-primary')) }}
 					</div>
 				</div>
 

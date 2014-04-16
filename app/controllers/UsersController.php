@@ -15,6 +15,7 @@ class UsersController extends BaseController {
 	public function postCreate()
 	{
 		$validator = Validator::make(Input::all(), array(
+				'username'	=> 'required',
 				'firstname' => 'required',
 				'lastname'  => 'required',
 				'email'     => 'required|email',
@@ -28,12 +29,20 @@ class UsersController extends BaseController {
 		else
 		{
 			$user = new User;
+			$user->username	= Input::get('username');
 			$user->firstname = Input::get('firstname');
 			$user->lastname = Input::get('lastname');
 			$user->email = Input::get('email');
 			$user->password = Hash::make(Input::get('password'));
 			$user->save();
-
+			
+			$profile = new Profile();
+			
+			
+			$profile->type 		= 'general';
+			$profile 			= $user->profiles()->save($profile);				
+			$profile->save();
+			
 			return Redirect::to('users/login')->with('message', 'Akun anda telah dibuat, silahkan melakukan login.');
 		}
 	}
@@ -102,6 +111,7 @@ class UsersController extends BaseController {
 			if (empty($profile)) {
 				
 				$user = new User;
+				$user->username 	= $me['username'];
 				$user->firstname 	= $me['first_name'];
 				$user->lastname 	= $me['last_name'];
 				$user->email 		= $me['email'];
@@ -112,7 +122,7 @@ class UsersController extends BaseController {
 				$profile = new Profile();
 				
 				$profile->uid 		= $uid;
-				$profile->username 	= $me['username'];
+				$profile->type 		= 'facebook';
 				$profile 			= $user->profiles()->save($profile);
 			}
 			
