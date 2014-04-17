@@ -35,7 +35,10 @@
 							'class'=>'btn btn-primary',
 							'onclick' => 'window.location.href=\'facebook\''
 						)) }}
-						{{ Form::button('Twitter', array('class'=>'btn btn-primary')) }}
+						{{ Form::button('Twitter', array(
+							'class'=>'btn btn-primary',
+							'onclick' => 'window.location.href=\'twitter\''
+						)) }}
 					</div>
 				</div>
 
