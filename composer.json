@@ -7,7 +7,8 @@
         "laravel/framework": "4.1.*",
         "intervention/image": "1.*",
         "facebook/php-sdk": "dev-master",
-        "kertz/twitteroauth": "dev-master"
+        "kertz/twitteroauth": "dev-master",
+        "cartalyst/sentry": "2.1.*"
     },
     "autoload": {
         "classmap": [
