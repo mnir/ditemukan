@@ -8,7 +8,8 @@
         "intervention/image": "1.*",
         "facebook/php-sdk": "dev-master",
         "kertz/twitteroauth": "dev-master",
-        "cartalyst/sentry": "2.1.*"
+        "cartalyst/sentry": "2.1.*",
+        "barryvdh/laravel-migration-generator": "dev-master"
     },
     "autoload": {
         "classmap": [
