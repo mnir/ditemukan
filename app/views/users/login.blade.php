@@ -16,7 +16,7 @@
 				<div class="form-group">
 					<label for="email" class="control-label col-md-4">Email</label>
 					<div class="col-md-8">
-						{{ Form::text('email', null, array('class'=>'form-control', 'id'=>'email'))  }}
+						{{ Form::email('email', null, array('class'=>'form-control', 'id'=>'email'))  }}
 						{{ $errors->first('email') }}
 					</div>
 				</div>
