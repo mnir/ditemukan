@@ -13,3 +13,5 @@ Thumbs.db
 app/config/local
 .idea/
 /node_modules
+node_modules/
+public/upload/
