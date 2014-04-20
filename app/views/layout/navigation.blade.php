@@ -32,7 +32,7 @@
                 <button type="submit" class="btn btn-default">Cari</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                @if(Auth::check())
+                @if(Sentry::check())
                 <li><a href="{{ URL::to('users/logout') }}">Logout</a></li>
                 @else
                 <li><a href="{{ URL::to('users/login') }}">Login</a></li>
