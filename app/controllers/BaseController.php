@@ -8,7 +8,7 @@ class BaseController extends Controller {
 	 * @var Illuminate\Support\MessageBag
 	 */
 	protected $messageBag = null;
-	
+
 	/**
 	 * Initializer.
 	 *
@@ -18,7 +18,7 @@ class BaseController extends Controller {
 	{
 		// CSRF Protection
 		$this->beforeFilter('csrf', array('on' => 'post'));
-	
+
 		//
 		$this->messageBag = new Illuminate\Support\MessageBag;
 	}
