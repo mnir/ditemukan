@@ -17,7 +17,7 @@
 						{{ $errors->first('username') }}
 					</div>
 				</div>
-				
+
 				<div class="form-group">
 					<label for="firstname" class="control-label col-md-4">Nama depan</label>
 					<div class="col-md-8">
