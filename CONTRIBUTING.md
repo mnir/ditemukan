@@ -41,4 +41,5 @@ dan ```php artisan db:seed```.
 
 #####Run App
 Untuk menjalankan App, pada root aplikasi ini ketik ```php artisan serve```
+
 Jika tidak menggunakan cara ini, maka harus mengakses ke folder public, contoh: http://localhost/ditemukan/public
