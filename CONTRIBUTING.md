@@ -9,7 +9,7 @@
 
 - Kemudian buat file baru didalamnya bernama ```database.php```
 
-- Sehingga menjadi ```app/config/database.php```
+- Sehingga menjadi ```app/config/local/database.php```
 
 - Copy isi file ```app/config/database.php```
 
