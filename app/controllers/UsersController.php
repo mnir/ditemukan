@@ -131,7 +131,6 @@ class UsersController extends BaseController {
 		}
 		else
 		{
-			// Sentry
 			$user = Sentry::register(array(
 					'username' => Input::get('username'),
 					'first_name' => Input::get('firstname'),
@@ -165,8 +164,6 @@ class UsersController extends BaseController {
 		}
 		else
 		{
-			// Sentry
-			
 			$user = Sentry::getUser();
 						
 			$user->username = Input::get('username');
@@ -202,33 +199,34 @@ class UsersController extends BaseController {
 				
 			$profile = Profile::whereUid($uid)->first();
 				
-			if (empty($profile)) {
-	
-				$user = new User;
-				$user->username 	= $me['username'];
-				$user->firstname 	= $me['first_name'];
-				$user->lastname 	= $me['last_name'];
-				$user->email 		= $me['email'];
-				$user->photo 		= 'https://graph.facebook.com/'.$me['username'].'/picture?type=large';
-					
-				$user->save();
+			if (empty($profile)) {					
+				$user = Sentry::register(array(
+					'username' 		=> $me['username'],
+					'first_name' 	=> $me['first_name'],
+					'last_name' 	=> $me['last_name'],
+					'email' 		=> $me['email'],
+					'password'		=> str_random(40)
+				), TRUE);
 					
 				$profile = new Profile();
 	
+				$profile->user_id	= $user->id;
 				$profile->uid 		= $uid;
 				$profile->type 		= 'facebook';
-				$profile 			= $user->profiles()->save($profile);
+				$profile->photo 	= 'https://graph.facebook.com/'.$me['username'].'/picture?type=large';				
 			}
 				
-			$profile->access_token = $facebook->getAccessToken();
+			$profile->access_token	= $facebook->getAccessToken();
 			$profile->save();
-				
+			
 			$user = $profile->user;
-				
-			Auth::login($user);
+			
+			$thisUser = Sentry::findUserById($user->id);
+			
+			Sentry::login($thisUser, TRUE);
 				
 			return Redirect::to('/')
-			->with('message', 'Logged in with Facebook');
+				->with('message', 'Logged in with Facebook');
 		} 
 		else 
 		{
@@ -251,7 +249,7 @@ class UsersController extends BaseController {
 	
 	public function getLogin()
 	{
-		if(Auth::check())
+		if(Sentry::check())
 		{
 			return Redirect::to('/');
 		}
@@ -301,17 +299,19 @@ class UsersController extends BaseController {
 						$profile = Profile::whereUid($oauth['user_id'])->first();
 						
 						if (empty($profile)) {
-							
-							$user 				= new User();
-							$user->username 	= $oauth['screen_name'];
-							$user->firstname 	= $me->name;
-							$user->photo 		= $me->profile_image_url;
-							$user->save();
-							
+												
+							$user = Sentry::register(array(
+								'username' 		=> $oauth['screen_name'],
+								'first_name' 	=> $me->name,							
+								'password'		=> str_random(40)
+							), TRUE);
+								
 							$profile 		= new Profile();
-							$profile->uid 	= $oauth['user_id'];							
-							$profile->type 	= 'twitter';
-							$profile 		= $user->profiles()->save($profile);
+							
+							$profile->user_id	= $user->id;
+							$profile->uid 		= $oauth['user_id'];							
+							$profile->type 		= 'twitter';
+							$profile->photo		= $me->profile_image_url;						
 						}
 						
 						$profile->access_token 			= $oauth['oauth_token'];
@@ -320,8 +320,9 @@ class UsersController extends BaseController {
 						$profile->save();
 					
 						$user = $profile->user;
-							
-						Auth::login($user);
+			
+						$thisUser = Sentry::findUserById($user->id);
+						Sentry::login($thisUser, TRUE);
 							
 						return Redirect::to('/')
 							->with('message', 'Logged in with Twitter');
@@ -366,11 +367,31 @@ class UsersController extends BaseController {
 	 * Login process
 	 */
 	public function postLogin()
-	{
-		$validator = Validator::make(Input::all(), array(
+	{						
+		if(filter_var(Input::get('email'), FILTER_VALIDATE_EMAIL)) {
+			$validator = Validator::make(Input::all(), array(
 				'email' => 'required|email',
 				'password' => 'required'
-		));
+			));
+			
+			$loginid = Input::get('email');
+		}
+		else {
+			$validator = Validator::make(Input::all(), array(
+				'email' => 'required',
+				'password' => 'required'
+			));
+
+			// https://github.com/cartalyst/sentry/issues/180#issuecomment-29557143
+			$emptyModelInstance = Sentry::getUserProvider()->getEmptyUser();
+			
+			// Now, you have any methods available that you'd like. Retrieve a new instance, query
+			// against anything. Because our User model implements the right interfaces, it plays nicely
+			// with Sentry.
+			$myUser = $emptyModelInstance->where('username', '=', Input::get('email'))->first();
+				
+			$loginid = $myUser->email;			
+		}
 	
 		if($validator->fails())
 		{
@@ -378,8 +399,14 @@ class UsersController extends BaseController {
 		}
 	
 		try {
+			
+			$credentials = array(
+				'email'    => $loginid,
+				'password' => Input::get('password'),
+			);
+			
 			Sentry::authenticate(
-				Input::only('email','password')
+				$credentials
 			);
 				
 			return Redirect::to('/');
