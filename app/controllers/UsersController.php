@@ -15,7 +15,7 @@ class UsersController extends BaseController {
 	public function postCreate()
 	{
 		$validator = Validator::make(Input::all(), array(
-			'username'	=> 'required|unique:users',
+			'username'	=> 'required|unique:users|alpha_num', // alpha_num: untuk memastikan tidak ada spasi
 			'firstname' => 'required',
 			'lastname'  => 'required',
 			'email'     => 'required|email|unique:users',
