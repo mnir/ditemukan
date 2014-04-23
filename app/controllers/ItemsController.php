@@ -9,7 +9,7 @@ class ItemsController extends BaseController {
 
 	public function getCreate()
 	{
-		if (Auth::check()) {
+		if (Sentry::check()) {
 			$cities = City::all();
 			return View::make('item.create', compact('cities'));
 		}
@@ -38,7 +38,7 @@ class ItemsController extends BaseController {
 		else
 		{
 			$item = new Item;
-			$item->user_id = Auth::user()->id;
+			$item->user_id = Sentry::getUser()->id;
 			$item->event_id = Input::get('events');
 			$item->city_id = Input::get('city');
 			$item->title = Input::get('title');

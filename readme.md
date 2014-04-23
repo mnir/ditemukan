@@ -16,6 +16,7 @@ Untuk CSS Preprocessor menggunakan SASS.
 
 ### Kontribusi
 Kalau agan berminat untuk ngebantu proyek ini biar rampung, bisa gabung diskusinya dimari gan [Google+ Community](https://plus.google.com/communities/115849858552849254841). Apapun bentuk **kontribusi** agan akan sangat berharga.
+Agan bisa lihat [Contribution Guidelines](https://github.com/mnir/ditemukan/blob/master/CONTRIBUTING.md) untuk memudahkan agan.
 
 ### Fungsi
 Berikut adalah beberapa fungsi sementara dari hasil diskusi dengan kawan-kawan yang sudah mau ikut membantu agar terlaksananya proyek ini. Jika agan punya **saran** atau **ide**, bisa di share di[Google+ Community](https://plus.google.com/communities/115849858552849254841) pokoknya terserah agan aja enaknya dimana.

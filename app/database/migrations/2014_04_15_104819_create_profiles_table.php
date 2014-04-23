@@ -20,6 +20,7 @@ class CreateProfilesTable extends Migration {
 			$table->biginteger('uid')->unsigned();
 			$table->string('access_token');
 			$table->string('access_token_secret');
+			$table->string('photo');
 			$table->timestamps();
 		});
 	}
