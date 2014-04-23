@@ -118,7 +118,7 @@ class UsersController extends BaseController {
 	public function store()
 	{
 		$validator = Validator::make(Input::all(), array(
-			'username'	=> 'required|unique:users',
+			'username'	=> 'required|unique:users|alpha_num',
 			'firstname' => 'required',
 			'lastname'  => 'required',
 			'email'     => 'required|email|unique:users',
