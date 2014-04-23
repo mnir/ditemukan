@@ -40,14 +40,7 @@
 						{{ Form::text('email', null, array('class'=>'form-control', 'id'=>'email'))  }}
 						{{ $errors->first('email') }}
 					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="password" class="control-label col-md-4">Password</label>
-					<div class="col-md-8">
-						{{ Form::password('password', array('class'=>'form-control', 'id'=>'password'))  }}
-					</div>
-				</div>
+				</div>				
 
 				<div class="form-group">
 					<div class="col-md-8 col-md-offset-4">

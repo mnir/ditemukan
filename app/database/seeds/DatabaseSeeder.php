@@ -9,11 +9,11 @@ class DatabaseSeeder extends Seeder {
 		// $this->call('UserTableSeeder');
 		$this->call('CityTableSeeder');
 		$this->call('EventTableSeeder');
-		$this->call('RoleTableSeeder');
+		// $this->call('RoleTableSeeder');
 	}
 }
 
-class RoleTableSeeder extends DatabaseSeeder {
+/* class RoleTableSeeder extends DatabaseSeeder {
 
 	public function run()
 	{
@@ -24,7 +24,7 @@ class RoleTableSeeder extends DatabaseSeeder {
 			)
 		);
 	}
-}
+} */
 
 class CityTableSeeder extends DatabaseSeeder {
 
