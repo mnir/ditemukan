@@ -2,11 +2,6 @@
 
 class ItemsController extends BaseController {
 
-	public function __construct()
-	{
-		$this->beforeFilter('csrf', ['on'=>'post']);
-	}
-
 	public function getCreate()
 	{
 		if (Sentry::check()) {
