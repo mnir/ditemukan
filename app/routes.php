@@ -7,5 +7,7 @@ Route::controller('items', 'ItemsController');
 Route::controller('losts', 'LostsController');
 Route::controller('founds', 'FoundsController');
 
-Route::resource('user', 'UsersController');
+Route::group(array('prefix' => 'admin'), function () {
+	Route::resource('users', 'Admin\\GwController');
+});
 
