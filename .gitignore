@@ -12,6 +12,4 @@ Thumbs.db
 /.sass-cache/**/*.scssc
 app/config/local
 .idea/
-/node_modules
-node_modules/
 public/upload/
