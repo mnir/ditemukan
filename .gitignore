@@ -13,3 +13,6 @@ Thumbs.db
 app/config/local
 .idea/
 public/upload/
+Gruntfile.js
+node_modules/
+package.json

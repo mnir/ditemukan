@@ -25,12 +25,12 @@
                     </ul>
                 </li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
+            {{-- <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Cari...">
                 </div>
                 <button type="submit" class="btn btn-default">Cari</button>
-            </form>
+            </form>} --}}
             <ul class="nav navbar-nav navbar-right">
                 @if(Sentry::check())
                 <li><a href="{{ URL::to('users/logout') }}">Logout</a></li>
