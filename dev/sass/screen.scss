@@ -2,8 +2,8 @@
 @import "vendor/bootstrap";
 
 // import file css dari komponen
-@import "komponen/variabel";
-@import "komponen/umum";
+@import "komponen/variable";
+@import "komponen/global";
 
 // import file css dari halaman
-@import "layout/beta";
+@import "layout/home";
