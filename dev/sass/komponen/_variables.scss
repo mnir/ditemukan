@@ -9,7 +9,38 @@ $baseFont: 'Oxygen', sans-serif;
 /* Color Pallette
 --------------------------------------- */
 
-$baseColor: #333;
+$baseColor: #555;
 
 /* Mixin
 --------------------------------------- */
+@mixin gradient($topColor, $bottomColor) {
+	background-image: $topColor;
+	background-image: -webkit-linear-gradient($topColor, $bottomColor);
+	background-image:    -moz-linear-gradient($topColor, $bottomColor);
+	background-image:      -o-linear-gradient($topColor, $bottomColor);
+	background-image:         linear-gradient($topColor, $bottomColor);
+}
+
+@mixin box-shadow($bs1, $bs2, $bs3, $red, $green, $blue, $alpha ) {
+	  -webkit-box-shadow: $bs1 $bs2 $bs3 rgba($bs3, $green, $blue, $alpha);
+       -moz-box-shadow: $bs1 $bs2 $bs3 rgba($bs3, $green, $blue, $alpha);
+            box-shadow: $bs1 $bs2 $bs3 rgba($bs3, $green, $blue, $alpha);
+}
+
+@mixin box-shadow-inset($bs1, $bs2, $bs3, $red, $green, $blue, $alpha ) {
+	  -webkit-box-shadow: inset $bs1 $bs2 $bs3 rgba($bs3, $green, $blue, $alpha);
+       -moz-box-shadow: inset $bs1 $bs2 $bs3 rgba($bs3, $green, $blue, $alpha);
+            box-shadow: inset $bs1 $bs2 $bs3 rgba($bs3, $green, $blue, $alpha);
+}
+
+@mixin transition($property, $time, $effect) {
+	  -webkit-transition: $property $time $effect;
+       -moz-transition: $property $time $effect;
+         -o-transition: $property $time $effect;
+            transition: $property $time $effect;
+}
+
+@mixin border-radius($px) {
+	border-radius: $px;
+	-webkit-border-radius: $px;
+}

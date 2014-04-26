@@ -7,6 +7,12 @@ body {
 	line-height: 1.8;
 }
 
+ul, ol, li {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
 body, h1, h2, h3, h4, h5, h6 {
 	font-family: $baseFont;
 }
@@ -18,6 +24,10 @@ a {
 	}
 }
 
-footer {
-	text-align: center;
+.box-white {
+	background-color: white;
+}
+
+.box-blue {
+	background-color: #6D9BC2;
 }

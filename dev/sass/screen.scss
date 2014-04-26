@@ -4,7 +4,10 @@
 // import file css dari komponen
 @import "komponen/variables";
 @import "komponen/global";
+@import "komponen/class";
+@import "komponen/buttons";
 @import "komponen/navbar";
+@import "komponen/footer";
 
 // import file css dari halaman
 @import "layout/home";
