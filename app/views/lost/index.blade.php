@@ -4,7 +4,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-6">
-			<h2>Daftar Barang Hilang</h2>
+			<h2>Daftar Kehilangan</h2>
 			<ul>
 				@foreach ($items as $item)
 					<li>

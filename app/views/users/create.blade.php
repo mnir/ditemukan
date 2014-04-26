@@ -3,9 +3,9 @@
 
 <div class="container">
 	<div class="col-md-6 col-md-offset-3">
-		<div id="login-form">
-			<div class="login-form-header">
-				<h2>Buat akun</h2>
+		<div id="login-form" class="box-white mgt20">
+			<div class="login-form-header col-md-8 col-md-offset-4">
+				<h3 class="fw3 ls-1">Buat akun</h3>
 			</div>
 			<div class="login-form-body">
 				{{ Form::open(array('url'=>'users/create', 'class'=>'form-horizontal')) }}
@@ -37,7 +37,7 @@
 				<div class="form-group">
 					<label for="email" class="control-label col-md-4">Email</label>
 					<div class="col-md-8">
-						{{ Form::text('email', null, array('class'=>'form-control', 'id'=>'email'))  }}
+						{{ Form::email('email', null, array('class'=>'form-control', 'id'=>'email'))  }}
 						{{ $errors->first('email') }}
 					</div>
 				</div>
@@ -51,7 +51,7 @@
 
 				<div class="form-group">
 					<div class="col-md-8 col-md-offset-4">
-						{{ Form::submit('Register', array('class'=>'btn btn-primary')) }}
+						{{ Form::submit('Daftar', array('class'=>'btn btn-sm btn-primary')) }}
 					</div>
 				</div>
 

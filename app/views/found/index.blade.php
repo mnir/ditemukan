@@ -4,8 +4,8 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-6">
-			<h2>Daftar Barang Ditemukan</h2>
-			<ul>
+			<h2>Daftar Ditemukan</h2>
+			<ul class="item-list">
 				@foreach ($items as $item)
 					<li>
 						{{ HTML::link('items/show/'.$item->id, $item->title) }}<br>
