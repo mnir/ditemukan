@@ -14,8 +14,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="first">{{ HTML::link('founds', 'Barang ditemukan') }}</li>
-                <li>{{ HTML::link('losts', 'Barang hilang') }}</li>
+                <li class="first">{{ HTML::link('founds', 'Ditemukan') }}</li>
+                <li>{{ HTML::link('losts', 'Kehilangan') }}</li>
                 {{-- <li>{{ HTML::link('items/create', 'Masukkan informasi baru') }}</li> --}}
             </ul>
             {{-- <form class="navbar-form navbar-left" role="search">
