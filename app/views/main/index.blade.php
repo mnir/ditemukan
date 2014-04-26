@@ -13,13 +13,13 @@
 		<div class="col-md-4 col-md-offset-2 tx-c pd50">
 			<h3 class="tx-uc fw3 ls-1">Menemukan</h3>
 			<p>Bantu saudara kita yang kehilangan dengan memberikan informasi.</p>
-			<a class="btn btn-primary btn-sm" href="#">Informasi ditemukan</a>
+			<a class="btn btn-primary btn-sm" href="#">Lapor ditemukan</a>
 		</div>
 
 		<div class="col-md-4 tx-c pd50">
 			<h3 class="tx-uc fw3 ls-1">Kehilangan</h3>
 			<p>Kami akan bantu menyebarluaskan informasi yang anda berikan.</p>
-			<a class="btn btn-primary btn-sm" href="">Informasi kehilangan</a>
+			<a class="btn btn-primary btn-sm" href="">Lapor kehilangan</a>
 		</div>
 	</div>
 </div>
