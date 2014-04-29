@@ -36,9 +36,21 @@
 
 				<hr class="divider">
 
+				<div class="form-group tx-c">
+					<div class="col-md-8 col-md-offset-2">
+						<h5 class="tx-uc mg0">Belum memiliki akun?</h5>
+					</div>
+				</div>
+
+				<div class="form-group tx-c">
+					<div class="col-md-8 col-md-offset-2">
+						{{ HTML::link('users/create', 'Buat Akun', array('class'=>'btn btn-warning btn-sm form-control')) }}
+					</div>
+				</div>
+
 				<div class="form-group">
-					<div class="col-md-8 col-md-offset-4">
-						<h5 class="tx-uc mg0">Login menggunakan</h5>
+					<div class="col-md-8 col-md-offset-2">
+						<h5 class="tx-uc mg0">atau Login menggunakan</h5>
 					</div>
 				</div>
 
@@ -62,19 +74,6 @@
 					</div>
 				</div>
 
-				<hr class="divider">
-
-				<div class="form-group">
-					<div class="col-md-8 col-md-offset-4">
-						<h5 class="tx-uc mg0">Belum memiliki akun?</h5>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<div class="col-md-8 col-md-offset-4">
-						{{ HTML::link('users/create', 'Buat Akun', array('class'=>'btn btn-warning btn-sm form-control')) }}
-					</div>
-				</div>
 				{{ Form::close() }}
 			</div>
 		</div>

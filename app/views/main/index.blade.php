@@ -10,16 +10,13 @@
 	</div>
 
 	<div class="row box-white mg0">
-		<div class="col-md-4 col-md-offset-2 tx-c pd50">
-			<h3 class="tx-uc fw3 ls-1">Menemukan</h3>
-			<p>Bantu saudara kita yang kehilangan dengan memberikan informasi.</p>
-			<a class="btn btn-primary btn-sm" href="{{ URL::to('items/create') }}">Lapor ditemukan</a>
-		</div>
-
-		<div class="col-md-4 tx-c pd50">
-			<h3 class="tx-uc fw3 ls-1">Kehilangan</h3>
-			<p>Kami akan bantu menyebarluaskan informasi yang anda berikan.</p>
-			<a class="btn btn-primary btn-sm" href="{{ URL::to('items/create') }}">Lapor kehilangan</a>
+		<div class="col-md-5 col-md-offset-1 pd50">
+			<h3 class="tx-uc fw3 ls-1">Laporkan</h3>
+			<p>
+				Anda menemukan atau mengalami kehilangan?<br>
+				Kami akan membantu menyebarluaskan informasi yang anda berikan.
+			</p>
+			<a class="btn btn-primary btn-sm" href="{{ URL::to('items/create') }}">Laporkan Informasi</a>
 		</div>
 	</div>
 </div>

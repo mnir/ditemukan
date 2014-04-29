@@ -19,6 +19,10 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         {{ HTML::script('assets/js/vendor/bootstrap.min.js') }}
+        {{ HTML::script('assets/js/vendor/selectize.min.js') }}
+        <script>
+            $('.selectize').selectize();
+        </script>
         @yield('script')
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

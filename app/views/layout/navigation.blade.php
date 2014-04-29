@@ -16,6 +16,7 @@
             <ul class="nav navbar-nav">
                 <li class="first">{{ HTML::link('founds', 'Ditemukan') }}</li>
                 <li>{{ HTML::link('losts', 'Kehilangan') }}</li>
+                <li>{{ HTML::link('items/create', 'Laporkan') }}</li>
                 {{-- <li>{{ HTML::link('items/create', 'Masukkan informasi baru') }}</li> --}}
             </ul>
             {{-- <form class="navbar-form navbar-left" role="search">
