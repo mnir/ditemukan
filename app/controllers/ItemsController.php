@@ -4,7 +4,7 @@ class ItemsController extends BaseController {
 
 	public function __construct()
 	{
-		$this->beforeFilter('csrf', ['on'=>'post']);
+		//$this->beforeFilter('csrf', array('on'=>'post'));
 	}
 
 	public function getCreate()
@@ -23,39 +23,52 @@ class ItemsController extends BaseController {
 	public function postCreate()
 	{
 		$rules = array(
-			'city'   => 'required',
-			'events' => 'required',
-			'title'  => 'required|min:5',
-			'desc'   => 'required|min:5'
+			'city_id'     => 'required',
+			'event_id'    => 'required',
+			'title'       => 'required',
+			'description' => 'required'
 		);
 
 		$validator = Validator::make(Input::all(), $rules);
 
 		if ($validator->fails())
 		{
-			return Redirect::to('item/create')->withErrors($validator)->withInput();
+			return Redirect::to('items/create')->withErrors($validator)->withInput();
 		}
 		else
 		{
 			$item = new Item;
 			$item->user_id = Sentry::getUser()->id;
-			$item->event_id = Input::get('events');
-			$item->city_id = Input::get('city');
+			$item->event_id = Input::get('event_id');
+			$item->city_id = Input::get('city_id');
 			$item->title = Input::get('title');
-			$item->description = Input::get('desc');
-			$item->save();
+			$item->description = Input::get('description');
 
-			$image = new Image;
-			$upload = Input::file('image');
-			$filename = date('YmdHis').'-'.$upload->getClientOriginalName();
-			Imager::make($upload->getRealPath())->resize(600, 600, true)->save('public/upload/items/'.$filename);
-			Imager::make($upload->getRealPath())->resize(200, null, true)->save('public/upload/items/thumbs/'.$filename);
-			$image->item_id = $item->id;
-			$image->path = $filename;
-			$image->save();
+			// Untuk input image path di halaman daftar item
+			$cover = Input::file('image');
+			if($cover)
+			{
+				$filename = date('YmdHis').'-'.$cover->getClientOriginalName();
+				Imager::make($cover->getRealPath())->grab(80)->save('public/upload/items/covers/'.$filename);
+				$item->image = $filename;
+			}
+
+			$item->save();
 
 			$item->slug = $item->id.' '.$item->title;
 			$item->save();
+
+			$upload = Input::file('image');
+			if($upload)
+			{
+				$image = new Image;
+				$filename = date('YmdHis').'-'.$upload->getClientOriginalName();
+				Imager::make($upload->getRealPath())->resize(600, 600, true)->save('public/upload/items/'.$filename);
+				Imager::make($upload->getRealPath())->resize(200, null, true)->save('public/upload/items/thumbs/'.$filename);
+				$image->item_id = $item->id;
+				$image->path = $filename;
+				$image->save();
+			}
 
 			return Redirect::to('/');
 		}
