@@ -17,7 +17,7 @@
 			<div class="form-group">
 				<label for="events" class="control-label col-md-4">Status</label>
 				<div class="col-md-8">
-					<select name="event_id" id="event" placeholder="Status" class="form-control selectize">
+					<select name="event" id="event" placeholder="Status" class="form-control selectize">
 						<option value=""></option>
 						<option value="1">Hilang</option>
 						<option value="2">Ditemukan</option>
@@ -28,7 +28,7 @@
 			<div class="form-group">
 				<label for="city" class="control-label col-md-4">Kota</label>
 				<div class="col-md-8">
-					<select name="city_id" id="city" placeholder="Kota" class="form-control selectize">
+					<select name="city" id="city" placeholder="Kota" class="form-control selectize">
 					<option value=""></option>
 					@foreach ($cities as $c)
 						<option value="{{ $c->id }}">{{ $c->name }}</option>

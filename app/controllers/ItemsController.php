@@ -4,7 +4,7 @@ class ItemsController extends BaseController {
 
 	public function __construct()
 	{
-		//$this->beforeFilter('csrf', array('on'=>'post'));
+		$this->beforeFilter('csrf', array('on'=>'post'));
 	}
 
 	public function getCreate()
@@ -23,8 +23,8 @@ class ItemsController extends BaseController {
 	public function postCreate()
 	{
 		$rules = array(
-			'city_id'     => 'required',
-			'event_id'    => 'required',
+			'city'     => 'required',
+			'event'    => 'required',
 			'title'       => 'required',
 			'description' => 'required'
 		);
@@ -39,8 +39,8 @@ class ItemsController extends BaseController {
 		{
 			$item = new Item;
 			$item->user_id = Sentry::getUser()->id;
-			$item->event_id = Input::get('event_id');
-			$item->city_id = Input::get('city_id');
+			$item->event_id = Input::get('event');
+			$item->city_id = Input::get('city');
 			$item->title = Input::get('title');
 			$item->description = Input::get('description');
 
