@@ -81,4 +81,16 @@ class ItemsController extends BaseController {
 		return View::make('item.show', compact('items', 'images'));
 	}
 
+	public function getLost()
+	{
+		$items = Item::where('event_id', 1)->get();
+		return View::make('lost.index', compact('items'));
+	}
+
+	public function getFound()
+	{
+		$items = Item::where('event_id', 2)->get();
+		return View::make('found.index', compact('items'));
+	}
+
 }
