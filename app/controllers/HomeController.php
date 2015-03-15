@@ -4,7 +4,9 @@ class HomeController extends BaseController {
 
 	public function Index()
 	{
-		return View::make('main.index');
+		$user = Sentry::getUser();
+		
+		return View::make('main.index')->with('userId', $user->id);
 	}
 
 }

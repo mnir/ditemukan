@@ -293,4 +293,11 @@ class UsersController extends BaseController {
 
 		return Redirect::back()->withInput()->withErrors($this->messageBag);
 	}
+	
+	public function getShow($id) {
+		//dd(Sentry::getUser());
+		$user = User::find($id);
+		
+		return View::make('users.show')->with('user', $user);
+	}
 }
