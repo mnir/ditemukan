@@ -25,6 +25,11 @@
                 </div>
                 <button type="submit" class="btn btn-default">Cari</button>
             </form> --}}
+            @if(Sentry::check())
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{ URL::to('users/show/' . Sentry::getUser()->id) }}">Profil</a></li>                
+            </ul>
+            @endif
             <ul class="nav navbar-nav navbar-right">
                 @if(Sentry::check())
                 <li><a href="{{ URL::to('users/logout') }}">Logout</a></li>
@@ -32,7 +37,7 @@
                 <li><a href="{{ URL::to('users/login') }}">Login / daftar</a></li>
                 {{-- <li><a href="{{ URL::to('users/create') }}">Daftar</a></li> --}}
                 @endif
-            </ul>
+            </ul>            
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
