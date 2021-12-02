@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+./vendor/bin/php-cs-fixer fix app/ --rules=@PSR12
